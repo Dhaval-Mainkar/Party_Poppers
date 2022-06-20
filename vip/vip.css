@@ -1,0 +1,161 @@
+*{
+  margin:0;
+  padding: 0;
+  font-family: 'Poppins',sans-serif;
+}
+.birthday{
+  position: relative;
+  padding:2%;
+  min-height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: url(v.jpg);
+  background-size: cover;
+}
+.birthday .content{
+  max-width: 100%;
+  text-align: center;
+  color:indianred;
+}
+.birthday .content h1{
+  font-size: 45px;
+  font-weight: 800;
+  height:50%;
+  font-family: Lucida Handwriting,cursive;
+  margin-top: -20%;
+  font-family: Courier New;
+}
+.container{
+  width:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  color: azure;
+}
+.container .eventinfo
+{
+  width:70%;
+  display:flex;
+  flex-direction: column;
+  height: 20%;
+  padding: -10%;
+  margin-top: -15%;
+}
+
+.container .eventinfo p
+{
+  margin-top: 1%;
+  text-indent: 20px;
+  font-family: 	Times New Roman;
+    font-size: 20px;
+    color:black;
+}
+.container .eventinfo h3
+{
+  border:5px;
+  width:188px;
+  padding: 0;
+  margin-top: 3%;
+  color: crimson;
+  font-size: 25px;
+  font-family: Courier New;
+}
+.container .eventinfo h4
+{
+  border:1px;
+width:280px;
+padding:0;
+  margin-top: 3%;
+  color: crimson;
+  font-size: 25px;
+  font-family: Courier New;
+}
+.requestform{
+  width:20%;
+  padding:40px;
+  margin-left:5%;
+  margin-right: 2%;
+  background: white;
+  border-radius: 5%;
+}
+.requestform .datepicker{
+  width:180px;
+  margin:0 20px 20px 20px;
+  margin-top: 10px;
+  margin-left: -1px;
+  margin-bottom: -3px;
+}
+.requestform h2{
+font-size: 30px;
+color: indianred;
+font-weight: 500;
+}
+.requestform .inputbox
+{
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+.requestform .inputbox input,
+.requestform .inputbox textarea
+{
+  width:100%;
+  padding:5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  border:none;
+  border-bottom: 2px solid #333;
+  outline:none;
+  resize: none;
+}
+.requestform .inputbox span{
+  position: absolute;
+  left: 0;
+  padding: 5px 0;
+  font-size: 16px;
+  margin: 10px 0;
+  pointer-events:none;
+  transition:0.5s;
+  color:grey;
+}
+.requestform .inputbox input:focus ~ span,
+.requestform .inputbox input:valid ~ span,
+.requestform .inputbox textarea:focus ~ span,
+.requestform .inputbox textarea:valid ~ span
+{
+  color: #e91e63;
+  font-size:12px;
+  transform:translateY(-20px);
+}
+.requestform .inputbox input[type="submit"]
+{
+  width:100%;
+  background: crimson;
+  color: #fff;
+  border:none;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 18px;
+}
+@media screen and (max-width:992px) {
+  .birthday
+  {
+    padding: :2%;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .container .eventinfo
+  {
+    width: 100%;
+  }
+  .container .eventinfo,
+  .requestform
+  {
+    width:100%;
+    display: block;
+  }
+}

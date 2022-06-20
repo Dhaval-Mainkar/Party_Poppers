@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+}
+
+*{
+  box-sizing: inherit;
+  background-color: #F0F8FF;
+}
+
+.column {
+  float: left;
+  width: 33.3%;
+  margin-bottom: 16px;
+  padding: 0 8px;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  margin: 8px;
+}
+
+.about-section{
+  padding: 22px;
+}
+.about-section h1{
+  text-align: center;
+  color: red;
+}
+.about-section p{
+  text-indent: 30px;
+  margin-bottom: 2%;
+  font-family: Snell Roundhand, cursive;
+  font-weight: 500;
+}
+.container-team{
+  padding:8%;
+  margin-top: -9%;
+}
+.container {
+  padding: 0 16px;
+}
+.container-icons{
+  text-align: center;
+}
+.container::after, .row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.title {
+  color: grey;
+}
+
+.button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 8px;
+  color: white;
+  background-color: #000;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: #555;
+}
+.container-icons{
+  padding: 8%;
+  text-align: center;
+}
+.media {
+  position: absolute;
+  left:31%;
+}
+li{
+  list-style: none;
+  margin:10px 30px;
+  display: inline-block;
+  font-size: 20px;
+  padding: 20px 20px;
+  color: red;
+  border: 1px solid blue;
+  border-radius: 50%;
+  transition: .5s;
+}
+li:hover{
+  color:green;
+  border:1px solid yellow;
+  transition:.5s;
+}
+@media screen and (max-width: 650px) {
+  .column {
+    width: 100%;
+    display: block;
+  }
+}
